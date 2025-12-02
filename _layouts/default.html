@@ -76,6 +76,61 @@
         border-radius: 3px;
         border-left: 3px solid #3498db;
     }
+/* Стили для таблиц */
+.matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.matrix-table th {
+    background: #2c3e50;
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: 600;
+}
+
+.matrix-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eaeaea;
+    vertical-align: top;
+}
+
+.matrix-table tr:hover {
+    background: #f8f9fa;
+}
+
+.matrix-table a {
+    color: #2980b9;
+    text-decoration: none;
+    line-height: 1.4;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.matrix-table a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Уменьшаем текст в ячейках */
+.matrix-table td {
+    font-size: 0.85em;
+}
+
+/* Для мобильных */
+@media (max-width: 768px) {
+    .matrix-table {
+        font-size: 0.8em;
+    }
+    .matrix-table th,
+    .matrix-table td {
+        padding: 8px 10px;
+    }
+}
 </style>
 </head>
 <body>

@@ -7,8 +7,7 @@
 |||[**HT0005 Навязанная финансовая помощь**](techniques/HT0005) – [T1486 Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/)||[**HT0012 Создание альтернативных процессов**](techniques/HT0012) – [T1070 Indicator Removal](https://attack.mitre.org/techniques/T1070/)|[**HT0016 Подмена договоренностей**](techniques/HT0016) – [T1036 Masquerading](https://attack.mitre.org/techniques/T1036/)|[**HT0019 Превышение запроса**](techniques/HT0019) - [T1189 Drive-by Compromise](https://attack.mitre.org/techniques/T1189/)|[**HT0022 Апелляция к корпоративности**](techniques/HT0022) - [T1592 Gather Victim Host Information](https://attack.mitre.org/techniques/T1592/)||
 |||[**HT0006 Шантаж социальными нормами**](techniques/HT0006) – [T1498 Network Denial of Service](https://attack.mitre.org/techniques/T1498/)||[**HT0013 Физическое вытеснение**](techniques/HT0013)  – [T1210 Exploitation of Remote Services](https://attack.mitre.org/techniques/T1210/)|||||
 |||[**HT0007 Захват авторитета**](techniques/HT0007) – [T1068 Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068/)|||||||
-
-
+{: .matrix-table}
 
 **О матрице**: [перейти](index.md)
 
