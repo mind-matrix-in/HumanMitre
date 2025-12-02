@@ -76,59 +76,104 @@
         border-radius: 3px;
         border-left: 3px solid #3498db;
     }
-/* Стили для таблиц */
+/* ===================== */
+/* СТИЛИ ДЛЯ ТАБЛИЦЫ MATRIX */
+/* ===================== */
+
 .matrix-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.9em;
-    margin: 20px 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin: 25px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
 }
 
-.matrix-table th {
-    background: #2c3e50;
+/* ШАПКА ТАБЛИЦЫ (только первая строка) */
+.matrix-table > thead > tr > th {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);
     color: white;
     text-align: left;
-    padding: 12px 15px;
+    padding: 16px 20px;
     font-weight: 600;
+    font-size: 1em;
+    border-bottom: 3px solid #3498db;
 }
 
-.matrix-table td {
-    padding: 10px 15px;
-    border-bottom: 1px solid #eaeaea;
+/* ЯЧЕЙКИ С ТАКТИКАМИ (левая колонка) */
+.matrix-table > tbody > tr > th:first-child {
+    background: #f8f9fa;
+    color: #2c3e50;
+    font-weight: 600;
+    padding: 14px 20px;
+    border-right: 2px solid #eaeaea;
+    width: 25%;
     vertical-align: top;
 }
 
-.matrix-table tr:hover {
-    background: #f8f9fa;
+/* ОБЫЧНЫЕ ЯЧЕЙКИ */
+.matrix-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #eaeaea;
+    vertical-align: top;
+    line-height: 1.5;
 }
 
+/* ЧЕРЕДОВАНИЕ СТРОК */
+.matrix-table > tbody > tr:nth-child(even) {
+    background: #fafbfc;
+}
+
+.matrix-table > tbody > tr:nth-child(odd) {
+    background: white;
+}
+
+/* ЭФФЕКТ ПРИ НАВЕДЕНИИ */
+.matrix-table > tbody > tr:hover {
+    background: #edf7ff;
+    transition: background 0.2s;
+}
+
+/* ССЫЛКИ В ТАБЛИЦЕ */
 .matrix-table a {
     color: #2980b9;
     text-decoration: none;
-    line-height: 1.4;
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    padding: 2px 4px;
+    border-radius: 3px;
 }
 
 .matrix-table a:hover {
     color: #e74c3c;
     text-decoration: underline;
+    background: rgba(52, 152, 219, 0.1);
 }
 
-/* Уменьшаем текст в ячейках */
+/* ЗАГОЛОВКИ ВНУТРИ ТАБЛИЦЫ (кроме первой строки) */
+.matrix-table th:not(:first-child) {
+    background: #f1f8ff;
+    color: #2c3e50;
+    font-weight: 500;
+    padding: 12px 20px;
+}
+
+/* ГРАНИЦЫ */
+.matrix-table th,
 .matrix-table td {
-    font-size: 0.85em;
+    border: 1px solid #e1e4e8;
 }
 
-/* Для мобильных */
+/* АДАПТИВНОСТЬ */
 @media (max-width: 768px) {
     .matrix-table {
-        font-size: 0.8em;
+        font-size: 0.85em;
     }
     .matrix-table th,
     .matrix-table td {
-        padding: 8px 10px;
+        padding: 10px 12px;
     }
 }
 </style>
